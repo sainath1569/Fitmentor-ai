@@ -1,0 +1,21 @@
+{
+  "name": "fitmentor-ai",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Agentic AI fitness and nutrition assistant for hostel students and day scholars",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,yellow \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "test": "npm test -w server",
+    "seed": "npm run seed -w server",
+    "check:ai": "npm run check:ai -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}

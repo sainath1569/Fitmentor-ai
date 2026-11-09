@@ -1,0 +1,77 @@
+// Approximate values for one typical serving, compiled as estimates from common
+// Indian food composition figures. Mess recipes vary, so treat these as starting
+// points. priceInr is what a student pays extra; 0 means covered by mess or home food.
+// where: mess (regular mess or home meal), canteen, shop (no cooking), kettle, stove
+const f = (id, name, serving, kcal, protein, carbs, fat, priceInr, diet, where, aliases = []) => ({
+  id, name, serving, kcal, protein, carbs, fat, priceInr, diet, where, aliases,
+});
+
+export const foods = [
+  // Staples
+  f('chapati', 'Chapati', '1 medium', 110, 3, 18, 3, 0, 'vegan', 'mess', ['roti', 'phulka', 'fulka']),
+  f('rice', 'Steamed rice', '1 cup cooked', 205, 4, 45, 0.5, 0, 'vegan', 'mess', ['rice', 'white rice', 'plain rice', 'annam', 'chawal']),
+  f('jeera-rice', 'Jeera rice', '1 cup', 260, 5, 46, 6, 0, 'vegan', 'mess', ['cumin rice']),
+  f('curd-rice', 'Curd rice', '1 cup', 240, 7, 38, 6, 0, 'veg', 'mess', ['thayir sadam', 'daddojanam', 'perugu annam']),
+  f('veg-biryani', 'Veg biryani', '1 plate', 420, 9, 66, 13, 0, 'veg', 'mess', ['vegetable biryani', 'veg pulao', 'pulao']),
+  f('chicken-biryani', 'Chicken biryani', '1 plate', 620, 30, 72, 22, 0, 'nonveg', 'mess', ['biryani']),
+  f('lemon-rice', 'Lemon rice', '1 cup', 280, 5, 48, 8, 0, 'vegan', 'mess', ['pulihora', 'chitranna', 'tamarind rice']),
+  f('paratha', 'Plain paratha', '1 medium', 190, 4, 27, 7, 0, 'veg', 'mess', ['parotta']),
+  f('aloo-paratha', 'Aloo paratha', '1 medium', 280, 6, 40, 11, 0, 'veg', 'mess', ['stuffed paratha']),
+  f('puri', 'Puri', '1 piece', 100, 2, 11, 5, 0, 'vegan', 'mess', ['poori']),
+  // Dal and curries
+  f('dal', 'Dal', '1 katori', 150, 8, 20, 4, 0, 'vegan', 'mess', ['dal tadka', 'dal fry', 'pappu', 'toor dal', 'moong dal', 'lentils', 'yellow dal']),
+  f('sambar', 'Sambar', '1 katori', 110, 5, 16, 3, 0, 'vegan', 'mess', ['sambhar']),
+  f('rasam', 'Rasam', '1 katori', 45, 1, 8, 1, 0, 'vegan', 'mess', ['charu']),
+  f('rajma', 'Rajma curry', '1 katori', 190, 10, 26, 5, 0, 'vegan', 'mess', ['kidney beans', 'rajma masala']),
+  f('chole', 'Chole', '1 katori', 210, 10, 28, 7, 0, 'vegan', 'mess', ['chana masala', 'chickpea curry', 'chana']),
+  f('mixed-veg', 'Mixed vegetable curry', '1 katori', 120, 3, 13, 6, 0, 'vegan', 'mess', ['sabzi', 'sabji', 'veg curry', 'curry', 'kurma', 'vegetable curry']),
+  f('aloo-sabzi', 'Potato curry', '1 katori', 170, 3, 24, 7, 0, 'vegan', 'mess', ['aloo sabzi', 'aloo curry', 'potato fry', 'aloo fry']),
+  f('paneer-curry', 'Paneer curry', '1 katori', 270, 13, 10, 20, 0, 'veg', 'mess', ['paneer butter masala', 'shahi paneer', 'matar paneer', 'paneer masala', 'palak paneer']),
+  f('egg-curry', 'Egg curry', '2 eggs with gravy', 260, 14, 8, 19, 0, 'egg', 'mess', ['anda curry', 'egg masala']),
+  f('chicken-curry', 'Chicken curry', '1 katori', 280, 24, 7, 17, 0, 'nonveg', 'mess', ['chicken masala', 'chicken gravy']),
+  f('fish-curry', 'Fish curry', '1 katori', 220, 22, 6, 12, 0, 'nonveg', 'mess', ['fish gravy']),
+  f('curd', 'Curd', '1 katori', 90, 5, 7, 4, 0, 'veg', 'mess', ['dahi', 'yogurt', 'perugu', 'thayir']),
+  f('salad', 'Onion and cucumber salad', '1 small plate', 30, 1, 6, 0, 0, 'vegan', 'mess', ['salad', 'cucumber', 'kachumber']),
+  f('papad', 'Papad', '1 piece', 50, 3, 8, 1, 0, 'vegan', 'mess', ['appalam']),
+  f('pickle', 'Pickle', '1 teaspoon', 25, 0, 1, 2, 0, 'vegan', 'mess', ['achar', 'avakaya']),
+  // Breakfast
+  f('idli', 'Idli', '1 piece', 60, 2, 12, 0.5, 0, 'vegan', 'mess', ['idly']),
+  f('dosa', 'Plain dosa', '1 medium', 170, 4, 28, 5, 0, 'vegan', 'mess', ['dosai', 'sada dosa']),
+  f('masala-dosa', 'Masala dosa', '1 piece', 330, 7, 48, 12, 60, 'vegan', 'canteen', ['aloo dosa']),
+  f('upma', 'Upma', '1 cup', 240, 6, 36, 8, 0, 'vegan', 'mess', ['rava upma', 'uppuma']),
+  f('poha', 'Poha', '1 cup', 250, 5, 42, 7, 0, 'vegan', 'mess', ['aval', 'atukulu', 'flattened rice']),
+  f('vada', 'Medu vada', '1 piece', 130, 4, 13, 7, 0, 'vegan', 'mess', ['vadai', 'garelu']),
+  f('pesarattu', 'Pesarattu', '1 medium', 180, 8, 26, 5, 0, 'vegan', 'mess', ['moong dosa', 'green gram dosa']),
+  f('coconut-chutney', 'Coconut chutney', '2 tablespoons', 70, 1, 3, 6, 0, 'vegan', 'mess', ['chutney', 'peanut chutney']),
+  f('bread-slice', 'Bread', '1 slice', 75, 2.5, 14, 1, 5, 'vegan', 'shop', ['toast', 'white bread', 'brown bread']),
+  f('boiled-egg-mess', 'Boiled egg', '1 egg', 75, 6, 0.5, 5, 0, 'egg', 'mess', ['egg', 'mess egg', 'anda']),
+  f('omelette', 'Omelette', '2 eggs', 190, 13, 2, 14, 30, 'egg', 'canteen', ['omlet', 'egg omelette', 'bread omelette']),
+  f('tea', 'Milk tea', '1 cup', 70, 2, 10, 2, 10, 'veg', 'canteen', ['chai', 'chaya']),
+  f('coffee', 'Milk coffee', '1 cup', 80, 2, 11, 3, 15, 'veg', 'canteen', ['filter coffee']),
+  // Protein add-ons a student can buy
+  f('boiled-egg', 'Boiled eggs from the shop', '2 eggs', 150, 12, 1, 10, 16, 'egg', 'shop', ['boiled eggs']),
+  f('milk', 'Toned milk', '250 ml', 150, 8, 12, 8, 15, 'veg', 'shop', ['milk packet', 'doodh']),
+  f('soya-chunks', 'Soya chunks, boiled', '50 g dry', 170, 26, 16, 0.3, 12, 'vegan', 'kettle', ['soya', 'meal maker', 'nutrela', 'soya nuggets']),
+  f('roasted-chana', 'Roasted chana', '50 g', 180, 10, 29, 3, 10, 'vegan', 'shop', ['bhuna chana', 'putnalu', 'pottukadalai', 'roasted gram']),
+  f('peanuts', 'Roasted peanuts', '40 g', 230, 10, 8, 18, 10, 'vegan', 'shop', ['groundnuts', 'palli', 'moongphali', 'verusenaga']),
+  f('peanut-butter', 'Peanut butter', '2 tablespoons', 190, 8, 6, 16, 18, 'vegan', 'shop', ['pb']),
+  f('sprouts', 'Moong sprouts', '1 cup', 110, 8, 18, 1, 15, 'vegan', 'kettle', ['sprouts', 'moong sprouts', 'green gram sprouts']),
+  f('paneer-raw', 'Paneer', '100 g', 265, 18, 3, 20, 40, 'veg', 'shop', ['cottage cheese']),
+  f('tofu', 'Tofu', '100 g', 120, 13, 3, 7, 35, 'vegan', 'shop', ['soya paneer']),
+  f('lassi', 'Sweet lassi', '1 glass', 180, 6, 28, 5, 30, 'veg', 'canteen', ['buttermilk sweet']),
+  f('buttermilk', 'Buttermilk', '1 glass', 40, 2, 5, 1, 10, 'veg', 'canteen', ['chaas', 'majjiga', 'mor']),
+  f('sattu', 'Sattu drink', '40 g in water', 160, 9, 25, 2, 12, 'vegan', 'shop', ['sattu powder', 'sattu']),
+  f('oats', 'Oats with milk', '40 g oats, 200 ml milk', 270, 12, 34, 9, 25, 'veg', 'kettle', ['oatmeal', 'porridge']),
+  f('whey', 'Whey protein', '1 scoop', 120, 24, 3, 1.5, 60, 'veg', 'shop', ['protein powder', 'protein shake', 'whey shake']),
+  f('chicken-breast', 'Grilled chicken', '100 g', 165, 31, 0, 4, 70, 'nonveg', 'canteen', ['chicken', 'tandoori chicken', 'chicken breast']),
+  // Fruit and snacks
+  f('banana', 'Banana', '1 medium', 100, 1, 26, 0, 8, 'vegan', 'shop', ['arati pandu', 'kela']),
+  f('apple', 'Apple', '1 medium', 80, 0.5, 21, 0, 25, 'vegan', 'shop', []),
+  f('guava', 'Guava', '1 medium', 70, 2.5, 14, 1, 12, 'vegan', 'shop', ['jama', 'amrood']),
+  f('samosa', 'Samosa', '1 piece', 260, 4, 28, 15, 15, 'vegan', 'canteen', ['aloo samosa']),
+  f('maggi', 'Instant noodles', '1 packet', 310, 7, 44, 13, 15, 'veg', 'kettle', ['maggi', 'noodles', 'yippee']),
+  f('veg-puff', 'Veg puff', '1 piece', 240, 4, 24, 14, 20, 'veg', 'canteen', ['puff', 'egg puff']),
+  f('biscuits', 'Glucose biscuits', '4 biscuits', 110, 2, 18, 3, 5, 'veg', 'shop', ['parle g', 'biscuit', 'cookies']),
+  f('gulab-jamun', 'Gulab jamun', '1 piece', 150, 2, 22, 6, 0, 'veg', 'mess', ['sweet', 'kheer', 'payasam', 'halwa']),
+  f('cola', 'Soft drink', '250 ml', 105, 0, 27, 0, 20, 'vegan', 'shop', ['coke', 'pepsi', 'thums up', 'cold drink']),
+];

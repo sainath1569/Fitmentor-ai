@@ -1,0 +1,288 @@
+{
+  "videos": {
+    "incline-pushup": {
+      "youtubeId": "qZ61y9j8oRU",
+      "title": "Push Up Anatomy",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "pushup": {
+      "youtubeId": "AqqWIFnFLeg",
+      "title": "What Muscles Do a Push Up Use?",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "decline-pushup": {
+      "youtubeId": "SKPab2YC8BE",
+      "title": "How To: Decline Push-Up",
+      "channel": "ScottHermanFitness"
+    },
+    "pike-pushup": {
+      "youtubeId": "WVYkIlM2M9g",
+      "title": "Master the Pike Push-Up",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "band-press": {
+      "youtubeId": "Rn-hf5iauTc",
+      "title": "How To Do Chest Press With Resistance Band | Chest Workout | Fitness My Life",
+      "channel": "Fitness My Life"
+    },
+    "db-floor-press": {
+      "youtubeId": "uUGDRwge4F8",
+      "title": "How To: Dumbbell Floor Press",
+      "channel": "ScottHermanFitness"
+    },
+    "db-shoulder-press": {
+      "youtubeId": "hmh5kzKMmhM",
+      "title": "Shoulder Press Common Mistake and More",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "bench-press": {
+      "youtubeId": "vYgFvAMJlPI",
+      "title": "Pectoralis Major, Bench Press",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "machine-press": {
+      "youtubeId": "xUm0BiZCWlQ",
+      "title": "How To: Chest Press (Cybex)",
+      "channel": "ScottHermanFitness"
+    },
+    "towel-row": {
+      "youtubeId": "upS-3_worok",
+      "title": "Towel Row",
+      "channel": "Strong 'N' Sexy Fitness",
+      "note": "Generic towel row demo."
+    },
+    "table-row": {
+      "youtubeId": "EIFEKZe4Wm8",
+      "title": "Table Inverted Row",
+      "channel": "Alex Bunt",
+      "note": "Inverted row under a table."
+    },
+    "backpack-row": {
+      "youtubeId": "1-1sL4mHi6k",
+      "title": "How to Bent Over Row, 3D animation",
+      "channel": "Planfit",
+      "style": "3d"
+    },
+    "band-row": {
+      "youtubeId": "1-1sL4mHi6k",
+      "title": "How to Bent Over Row Band, 3D animation",
+      "channel": "Planfit",
+      "style": "3d"
+    },
+    "db-row": {
+      "youtubeId": "jE43OmnBgLI",
+      "title": "How to One Arm Dumbbell Row, 3D animation",
+      "channel": "Planfit",
+      "style": "3d"
+    },
+    "negative-pullup": {
+      "youtubeId": "cr5KmVftdbE",
+      "title": "Latissimus Dorsi, Pull Ups",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "pullup": {
+      "youtubeId": "okNiCOOAHLE",
+      "title": "How to Pull Up, 3D animation",
+      "channel": "Planfit",
+      "style": "3d"
+    },
+    "lat-pulldown": {
+      "youtubeId": "or-b1psncs4",
+      "title": "Mastering the Lat Pulldown",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "cable-row": {
+      "youtubeId": "htFUEiykH24",
+      "title": "How to Seated Cable Row, 3D animation",
+      "channel": "Planfit",
+      "style": "3d"
+    },
+    "chair-squat": {
+      "youtubeId": "ITv-_BkcrD0",
+      "title": "Sit to Stand",
+      "channel": "Baptist Health"
+    },
+    "bodyweight-squat": {
+      "youtubeId": "zh27A93wwIc",
+      "title": "Master the Perfect Squat in 5 Steps",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "split-squat": {
+      "youtubeId": "xyn1-o3NkLg",
+      "title": "Bulgarian Split Squat vs. Skater Squat",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "bulgarian-split": {
+      "youtubeId": "xyn1-o3NkLg",
+      "title": "Bulgarian Split Squat vs. Skater Squat",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "wall-sit": {
+      "youtubeId": "RG7z0P9qrLk",
+      "title": "Wall Sit",
+      "channel": "E3 Rehab Exercise Library"
+    },
+    "goblet-squat": {
+      "youtubeId": "zh27A93wwIc",
+      "title": "Master the Perfect Squat in 5 Steps",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "barbell-squat": {
+      "youtubeId": "zh27A93wwIc",
+      "title": "Master the Perfect Squat in 5 Steps",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "leg-press": {
+      "youtubeId": "QDnCR1eOOPw",
+      "title": "Leg Press Anatomy",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "glute-bridge": {
+      "youtubeId": "L9KZfxT654Y",
+      "title": "Glute Bridge Tutorial - Proper Form and Technique",
+      "channel": "Runna"
+    },
+    "backpack-rdl": {
+      "youtubeId": "arXn26gvD00",
+      "title": "How to Romanian Deadlift, 3D animation",
+      "channel": "Planfit",
+      "style": "3d"
+    },
+    "band-good-morning": {
+      "youtubeId": "twGoRDaaiMI",
+      "title": "Good Morning Exercise",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "db-rdl": {
+      "youtubeId": "arXn26gvD00",
+      "title": "How to Romanian Deadlift, 3D animation",
+      "channel": "Planfit",
+      "style": "3d"
+    },
+    "deadlift": {
+      "youtubeId": "aGQK5iiAXK8",
+      "title": "How to Deadlift, 3D animation",
+      "channel": "Planfit",
+      "style": "3d"
+    },
+    "leg-curl": {
+      "youtubeId": "i6m3Vp9H40Y",
+      "title": "Build Your Legs | Lying Hamstring Curl Tutorial | Beginner's Guide to Gym Machines",
+      "channel": "Tim Bullici"
+    },
+    "plank": {
+      "youtubeId": "0C33SaM0HWs",
+      "title": "Plank exercises for powerful abs",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "dead-bug": {
+      "youtubeId": "BZYaCzbP09M",
+      "title": "Dead Bug",
+      "channel": "E3 Rehab Exercise Library"
+    },
+    "side-plank": {
+      "youtubeId": "F-nQ_KJgfCY",
+      "title": "STOP Doing Planks Like That!",
+      "channel": "Calisthenicmovement"
+    },
+    "hollow-hold": {
+      "youtubeId": "hf00_b2sRdc",
+      "title": "How to Perfect Your Hollow Hold | Form Check | Men's Health",
+      "channel": "Men's Health"
+    },
+    "hanging-knee-raise": {
+      "youtubeId": "RuIdJSVTKO4",
+      "title": "Hanging Leg Raises (Hip Flexion)",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "stair-climb": {
+      "youtubeId": "1hiWQ7pehjQ",
+      "title": "Wellness Wednesday: Build your stair climbing power with step-ups",
+      "channel": "Mayo Clinic",
+      "note": "Step-ups for stair climbing power."
+    },
+    "march": {
+      "youtubeId": "OWiXdeL_11o",
+      "title": "Knee Marching",
+      "channel": "My Senior Coach",
+      "note": "Knee marching (low-impact high-knee march)."
+    },
+    "shadow-box": {
+      "youtubeId": "J4j3AOVWuHE",
+      "title": "Quick Shadow Boxing Tutorial by Olympian",
+      "channel": "Tony Jeffries"
+    },
+    "jump-squat": {
+      "youtubeId": "XOTO2qWRy9U",
+      "title": "Dumbbell Jump Squat | Exercise Guide",
+      "channel": "Bodybuilding.com",
+      "note": "Dumbbell variation; do it with bodyweight only."
+    },
+    "burpee": {
+      "youtubeId": "r6MBg8-FlD4",
+      "title": "How to Burpee: all active muscles",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "skipping": {
+      "youtubeId": "wq1q4tUt_W4",
+      "title": "Jump Rope",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    },
+    "single-leg-bridge": {
+      "youtubeId": "di0rnIOloJg",
+      "title": "Single-Leg Glute Bridge",
+      "channel": "Muscle & Motion",
+      "style": "3d"
+    }
+  },
+  "photos": {
+    "push": {
+      "file": "/images/exercises/push.jpg",
+      "credit": "Mina Rad on Unsplash",
+      "url": "https://unsplash.com/photos/man-doing-push-ups-in-a-gym-6DD1mLk6ae0"
+    },
+    "pull": {
+      "file": "/images/exercises/pull.jpg",
+      "credit": "Lawrence Crayton on Unsplash",
+      "url": "https://unsplash.com/photos/man-in-gray-tank-top-holding-gray-metal-bar-ICwuKvw9QJk"
+    },
+    "squat": {
+      "file": "/images/exercises/squat.jpg",
+      "credit": "Rodrigo Rodrigues | WOLF Λ R T on Unsplash",
+      "url": "https://unsplash.com/photos/man-performing-a-dumbbell-squat-exercise-in-gym-HSUcA9U7bcA"
+    },
+    "hinge": {
+      "file": "/images/exercises/hinge.jpg",
+      "credit": "Rodrigo Rodrigues | WOLF Λ R T on Unsplash",
+      "url": "https://unsplash.com/photos/woman-lifting-a-heavy-barbell-in-a-gym-78E-sY8mVsM"
+    },
+    "core": {
+      "file": "/images/exercises/core.jpg",
+      "credit": "Margaret Young on Unsplash",
+      "url": "https://unsplash.com/photos/woman-performing-a-plank-exercise-on-a-yoga-mat-mgC52hk8TeU"
+    },
+    "cardio": {
+      "file": "/images/exercises/cardio.jpg",
+      "credit": "Rodrigo Rodrigues | WOLF Λ R T on Unsplash",
+      "url": "https://unsplash.com/photos/a-woman-is-jumping-rope-in-a-gym-1_n14FOxpxE"
+    }
+  }
+}
